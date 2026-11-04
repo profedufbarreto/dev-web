@@ -3,85 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula com CSS</title>
+    <title>Game Store</title>
     <link rel="stylesheet" href="/style.css">
-
-
 </head>
 <body>
 
-    <h1>Cadastro de alunos</h1>
-    <h2>Alunos cadastrados</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Curso</th>
-                <th>Idade</th>
-                <th>Cidade</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Ana Silva</td>
-                <td>Desenvolvedor de Sistemas</td>
-                <td>19</td>
-                <td>Novo Hamburgo</td>
-            </tr>
-            <tr>
-                <td>Pedro Souza</td>
-                <td>Informática</td>
-                <td>22</td>
-                <td>São Leopoldo</td>
-            </tr>
-            <tr>
-                <td>Mariana Costa</td>
-                <td>Excel</td>
-                <td>25</td>
-                <td>Campo Bom</td>
-            </tr>
-            <tr>
-                <td>Lucas Oliveira</td>
-                <td>Desenvolvimento de sistemas</td>
-                <td>28</td>
-                <td>Estância Velha</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Novo Cadastro</h2>
-    <form action="#" method="post">
-
-        <label for="nome">Nome Completo:</label>
-        <br><br>
-        <input type="text" id="nome" placeholder="Digite seu nome">
-        <br><br>
-
-        <label for="email">Email:</label>
-        <br><br>
-        <input type="text" id="email" placeholder="Digite seu email">
-        <br><br>
-
-        <label for="idade">Idade:</label>
-        <br><br>
-        <input type="number" id="idade" placeholder="Digite sua idade">
-        <br><br>
-
-        <label for="curso">Escolha seu curso:</label>
-        <select name="curso" id="curso">
-            <option value="">Selecione um curso</option>
-            <option value="informatica">Informática</option>
-            <option value="excel">Excel</option>
-            <option value="desenvolvimento">Desenvolvimento de sistemas</option>
-        </select>
-        <label for="mensagem">Observações:</label>
-        <textarea id="mensagem" rows="4" 
-        placeholder="Digite alguma observação"></textarea>
-
-        <button type="submit">Cadastrar</button>
-
-
-    </form>
+    <header class="topo">
+        <h1>🎮Game Store</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Jogos</a>
+            <a href="#">Promoção</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <section class="destaque">
+        <h2>Encontre seu próximo jogo!</h2>
+        <p>Os melhores jogos estão aqui.</p>
+    </section>
+    <main class="container">
+        <div class="card">
+            <div class="imagem imagem1">🏎️</div>
+            <h3>Speed Racing</h3>
+            <p>Prepare-se para corridas incríveis!</p>
+            <span>R$ 89,90</span>
+            <button>Comprar</button>
+        </div>
+        <div class="card">
+            <div class="imagem imagem2">⚔️</div>
+            <h3>Warrior Legend</h3>
+            <p>Uma aventura cheia de desafios.</p>
+            <span>R$ 119,90</span>
+            <button>Comprar</button>
+        </div>
+    </main>
 
 </body>
 </html>
