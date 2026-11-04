@@ -3,40 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 2</title>
-    
+    <title>Aula com CSS</title>
+    <link rel="stylesheet" href="/style.css">
+
+
 </head>
 <body>
 
-<form action="#" method="post">
+    <h1>Cadastro de alunos</h1>
+    <h2>Alunos cadastrados</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Curso</th>
+                <th>Idade</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Silva</td>
+                <td>Desenvolvedor de Sistemas</td>
+                <td>19</td>
+                <td>Novo Hamburgo</td>
+            </tr>
+            <tr>
+                <td>Pedro Souza</td>
+                <td>Informática</td>
+                <td>22</td>
+                <td>São Leopoldo</td>
+            </tr>
+            <tr>
+                <td>Mariana Costa</td>
+                <td>Excel</td>
+                <td>25</td>
+                <td>Campo Bom</td>
+            </tr>
+            <tr>
+                <td>Lucas Oliveira</td>
+                <td>Desenvolvimento de sistemas</td>
+                <td>28</td>
+                <td>Estância Velha</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <label for="nome">Nome:</label>
-    <br><br>
-    <input type="text" id="nome" placeholder="Seu nome.." required>
-    <br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" placeholder="seuemail@email.com">
-    <br><br>
-    <label for="senha">Senha:</label>
-    <input type="password" id="senha" required>
-    <br><br>
-    <label for="mensagem">Mensagem:</label>
-    <br><br>
-    <textarea name="mensagem" id="mensagem" rows="4" 
-    cols="50" placeholder="Escreva aqui.."></textarea>
-    <br><br>
-    <label for="cidade">Cidade:</label>
-    <select name="cidade" id="cidade">
-        <option value="">Selecione..</option>
-        <option value="nh">Novo Hamburgo</option>
-        <option value="sl">São Leopoldo</option>
-        <option value="cb">Campo Bom</option>
-        <option value="mgo">Montenegro</option>
-    </select>
+    <h2>Novo Cadastro</h2>
+    <form action="#" method="post">
 
-    
+        <label for="nome">Nome Completo:</label>
+        <br><br>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+        <br><br>
 
-</form>
+        <label for="email">Email:</label>
+        <br><br>
+        <input type="text" id="email" placeholder="Digite seu email">
+        <br><br>
+
+        <label for="idade">Idade:</label>
+        <br><br>
+        <input type="number" id="idade" placeholder="Digite sua idade">
+        <br><br>
+
+        <label for="curso">Escolha seu curso:</label>
+        <select name="curso" id="curso">
+            <option value="">Selecione um curso</option>
+            <option value="informatica">Informática</option>
+            <option value="excel">Excel</option>
+            <option value="desenvolvimento">Desenvolvimento de sistemas</option>
+        </select>
+        <label for="mensagem">Observações:</label>
+        <textarea id="mensagem" rows="4" 
+        placeholder="Digite alguma observação"></textarea>
+
+        <button type="submit">Cadastrar</button>
+
+
+    </form>
 
 </body>
 </html>
