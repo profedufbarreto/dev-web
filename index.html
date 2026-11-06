@@ -1,63 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Store</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Travel Experience</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <header class="topo">
-        <h1>🎮Game Store</h1>
+    <header>
+        <h1>✈ Travel Experience</h1>
+
         <nav>
-            <a href="#">Início</a>
-            <a href="#">Jogos</a>
-            <a href="#">Promoção</a>
-            <a href="#">Contato</a>
+            <a href="index.html">Início</a>
+            <a href="#destinos">Destinos</a>
+            <a href="cadastro.html">Contato</a>
         </nav>
     </header>
-    <section class="destaque">
-        <h2>Encontre seu próximo jogo!</h2>
-        <p>Os melhores jogos estão aqui.</p>
-    </section>
-    <main class="container">
-        <div class="card">
-            <div class="imagem imagem1">🏎️</div>
-            <h3>Speed Racing</h3>
-            <p>Prepare-se para corridas incríveis!</p>
-            <span>R$ 89,90</span>
-            <button>Comprar</button>
-        </div>
-        <div class="card">
-            <div class="imagem imagem2">⚔️</div>
-            <h3>Warrior Legend</h3>
-            <p>Uma aventura cheia de desafios.</p>
-            <span>R$ 119,90</span>
-            <button>Comprar</button>
-        </div>
-        <div class="card">
-            <div class="imagem imagem3">🚀</div>
-            <h3>Space Explorer</h3>
-            <p>Explore novos planetas e galáxias.</p>
-            <span>R$ 69,90</span>
-            <button>Comprar</button>
-        </div>
-        <div class="card">
-            <div class="imagem imagem4">🏀</div>
-            <h3>Street Basketball</h3>
-            <p>Mostre suas habilidades nas quadras.</p>
-            <span>R$ 59,90</span>
-            <button>Comprar</button>
-        </div>
+
+    <main>
+
+        <section class="banner">
+            <h2>O mundo espera por você!</h2>
+
+            <p>
+                Descubra lugares incríveis e viva experiências
+                inesquecíveis.
+            </p>
+
+            <a href="cadastro.html" class="botao">
+                Planejar minha viagem
+            </a>
+        </section>
+
+        <section class="destinos" id="destinos">
+
+            <h2>Destinos em destaque</h2>
+
+            <div class="container">
+
+                <article class="card">
+                    <div class="imagem">🏖️</div>
+                    <h3>Rio de Janeiro</h3>
+                    <p>Praias, paisagens e muita diversão.</p>
+                </article>
+
+                <article class="card">
+                    <div class="imagem">🗼</div>
+                    <h3>Paris</h3>
+                    <p>Romance, cultura e gastronomia.</p>
+                </article>
+
+                <article class="card">
+                    <div class="imagem">🌴</div>
+                    <h3>Maldivas</h3>
+                    <p>Praias paradisíacas e tranquilidade.</p>
+                </article>
+
+            </div>
+
+        </section>
+
     </main>
 
-<footer>
-    <p>
-        &copy; <time datetime="2026">2026</time>
-        Game Store - Todos os direitos reservados.
-    </p>
-</footer>
+    <footer>
+        <p>Travel Experience © 2026</p>
+    </footer>
 
 </body>
 </html>

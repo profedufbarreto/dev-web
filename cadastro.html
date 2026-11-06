@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Travel Experience</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>✈ Travel Experience</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="index.html#destinos">Destinos</a>
+        </nav>
+    </header>
+
+    <main class="area-cadastro">
+
+        <form id="formCadastro">
+
+            <h2>Planeje sua próxima viagem!</h2>
+
+            <label for="nome">Nome:</label>
+            <input
+                type="text"
+                id="nome"
+                placeholder="Digite seu nome"
+                required
+            >
+
+            <label for="email">E-mail:</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Digite seu e-mail"
+                required
+            >
+
+            <label for="destino">Destino desejado:</label>
+
+            <select id="destino" required>
+                <option value="">Escolha um destino</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Paris">Paris</option>
+                <option value="Maldivas">Maldivas</option>
+            </select>
+
+            <button type="submit">Enviar cadastro</button>
+
+            <p id="mensagem" aria-live="polite"></p>
+
+            <a href="index.html" class="voltar">
+                Voltar para o início
+            </a>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Travel Experience © 2026</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
