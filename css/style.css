@@ -1,192 +1,37 @@
-
-:root {
-    --fundo: #f1f5f9;
-    --principal: #0e7490;
-    --hover: #155e75;
-    --card: #ffffff;
-    --texto: #1e293b;
-}
-
-* {
-    box-sizing: border-box;
-}
-
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: var(--fundo);
-    color: var(--texto);
-}
-
-/* CABEÇALHO */
-
-header {
-    background-color: var(--card);
-    padding: 20px 8%;
-
+    background-color: #f3f4f6;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-
-header h1 {
-    color: var(--principal);
-}
-
-nav {
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    color: var(--texto);
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: var(--principal);
-}
-
-/* BANNER */
-
-.banner {
-    text-align: center;
-    padding: 70px 20px;
-    background: linear-gradient(120deg, #cffafe, #e0f2fe);
-}
-
-.banner h2 {
-    font-size: 36px;
-}
-
-.banner p {
-    margin-bottom: 30px;
-}
-
-/* BOTÕES */
-
-.botao,
-button {
-    display: inline-block;
-    background-color: var(--principal);
-    color: white;
-    padding: 13px 22px;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.botao:hover,
-button:hover {
-    background-color: var(--hover);
-}
-
-/* DESTINOS */
-
-.destinos {
-    padding: 35px 8%;
-    text-align: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: var(--card);
-    padding: 25px;
-    border-radius: 12px;
-    flex: 1;
-    min-width: 200px;
-    max-width: 280px;
-}
-
-.imagem {
-    font-size: 55px;
-    background-color: #e0f2fe;
-    padding: 25px;
-    border-radius: 8px;
-}
-
-/* CADASTRO */
-
-.area-cadastro {
-    display: flex;
-    justify-content: center;
-    padding: 45px 20px;
-}
-
-form {
-    background-color: var(--card);
-    width: 100%;
-    max-width: 420px;
+    background-color: white;
     padding: 30px;
-    border-radius: 12px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-form h2 {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-label {
-    font-weight: bold;
-}
-
-input,
-select {
-    padding: 12px;
-    border: 1px solid #cbd5e1;
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
     border-radius: 6px;
-    font-size: 15px;
+    cursor: pointer;
 }
 
-input:focus,
-select:focus {
-    outline: 2px solid var(--principal);
+button:hover {
+    background-color: #1d4ed8;
 }
 
-.voltar {
-    text-align: center;
-    color: var(--principal);
-    text-decoration: none;
-}
-
-#mensagem {
-    text-align: center;
-    color: var(--principal);
-    font-weight: bold;
-}
-
-/* RODAPÉ */
-
-footer {
-    text-align: center;
-    padding: 20px;
-}
-
-/* RESPONSIVIDADE */
-
-@media (max-width: 600px) {
-
-    header {
-        flex-direction: column;
-    }
-
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .banner h2 {
-        font-size: 27px;
-    }
-
+#retorno {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #111827;
 }

@@ -1,18 +1,15 @@
+const formEstilo = document.getElementById("formEstilo");
+const campoCor = document.getElementById("campoCor");
+const campoPadding = document.getElementById("campoPadding");
+const campoTamanho = document.getElementById("campoTamanho");
+const retorno = document.getElementById("retorno");
 
-const formulario = document.querySelector("#formCadastro");
-
-formulario.addEventListener("submit", function(event) {
-
+function aplicarEstilo(event) {
     event.preventDefault();
 
-    const nome = document.querySelector("#nome").value;
-    const destino = document.querySelector("#destino").value;
+    retorno.style.color = campoCor.value;
+    retorno.style.padding = campoPadding.value + "px";
+    retorno.style.fontSize = campoTamanho.value + "px";
+}
 
-    const mensagem = document.querySelector("#mensagem");
-
-    mensagem.textContent =
-        "Olá, " + nome + "! Sua próxima aventura será em " + destino + "!";
-
-    formulario.reset();
-
-});
+formEstilo.addEventListener("submit", aplicarEstilo);

@@ -1,75 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Experience</title>
-
-    <link rel="stylesheet" href="css/style.css">
+    <title>Botão com JavaScript</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>✈ Travel Experience</h1>
+    <main class="container">
+    <h1>Personalizador de texto</h1>
 
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="#destinos">Destinos</a>
-            <a href="cadastro.html">Contato</a>
-        </nav>
-    </header>
+    <form id="formEstilo">
+        <label for="campoCor">Cor (nome ou hex):</label>
+        <input type="text" id="campoCor" placeholder="ex: red ou #ff0000">
 
-    <main>
+        <label for="campoPadding">Padding (px):</label>
+        <input type="number" id="campoPadding" placeholder="ex: 10">
 
-        <section class="banner">
-            <h2>O mundo espera por você!</h2>
+        <label for="campoTamanho">Tamanho da letra (px):</label>
+        <input type="number" id="campoTamanho" placeholder="ex: 20">
 
-            <p>
-                Descubra lugares incríveis e viva experiências
-                inesquecíveis.
-            </p>
+        <button type="submit">Aplicar</button>
+    </form>
 
-            <a href="cadastro.html" class="botao">
-                Planejar minha viagem
-            </a>
-        </section>
+    <p id="retorno">Esta é a sua mensagem.</p>
+</main>
 
-        <section class="destinos" id="destinos">
-
-            <h2>Destinos em destaque</h2>
-
-            <div class="container">
-
-                <article class="card">
-                    <div class="imagem">🏖️</div>
-                    <h3>Rio de Janeiro</h3>
-                    <p>Praias, paisagens e muita diversão.</p>
-                </article>
-
-                <article class="card">
-                    <div class="imagem">🗼</div>
-                    <h3>Paris</h3>
-                    <p>Romance, cultura e gastronomia.</p>
-                </article>
-
-                <article class="card">
-                    <div class="imagem">🌴</div>
-                    <h3>Maldivas</h3>
-                    <p>Praias paradisíacas e tranquilidade.</p>
-                </article>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer>
-        <p>Travel Experience © 2026</p>
-    </footer>
-
+    <script src="/js/script.js"></script>
 </body>
 </html>
